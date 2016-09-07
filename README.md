@@ -1,15 +1,7 @@
-# asp.net.mvc-angular2-startproject
-Asp.Net Mvc With Angular 2 Startup project
+# WhoIsNearMe
 
-Asp.Net MVC (WebApi) project including Angular2.
-Simple Setup.
-
-1. Clone Project
-2. Open Command Prompt (cmd) 
-  - cd  path-to-project-Scripts-folder (there is package.json)
-  - npm install
-3. Start the app
+Simple Asp.Net and Angular 2 application.
+Keep track of all users that log-in on the application. And show them coordinates on Google Map.
 
 
-***NOTE: If your Visual Studio 2015 doesnt has TypeScript Extension you need to download and install it.
-https://www.microsoft.com/en-us/download/details.aspx?id=48593
+***NOTE: Used https://github.com/Gago993/asp.net.mvc-angular2-startproject as start project. 
