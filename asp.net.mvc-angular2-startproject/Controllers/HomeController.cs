@@ -5,7 +5,6 @@ using System.Web.Mvc;
 
 namespace asp.net.mvc_angular2_startproject.Controllers
 {
-    [Authorize]
     public class HomeController : Controller
     {
         public ActionResult Index()

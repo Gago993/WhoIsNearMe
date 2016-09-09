@@ -9,13 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var shared_1 = require('../shared/shared');
+var devices_service_1 = require('../Devices/devices.service');
 var AppComponent = (function () {
     function AppComponent() {
+        this.menuItems = [
+            { caption: 'Map', link: [''] },
+            { caption: 'Devices', link: ['devices'] },
+        ];
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            templateUrl: 'app/app.component.html'
+            templateUrl: './app/Component/app.component.html',
+            styleUrls: ['./app/Component/app.component.css'],
+            providers: [shared_1.IPService, devices_service_1.DevicesService],
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

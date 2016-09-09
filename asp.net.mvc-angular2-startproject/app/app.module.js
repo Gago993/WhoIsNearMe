@@ -10,15 +10,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
-var app_component_1 = require('./app.component');
-//import { AgmCoreModule } from 'angular2-google-maps/core';
+var app_component_1 = require('./Component/app.component');
+var http_1 = require('@angular/http');
+var angular2_google_maps_1 = require('angular2-google-maps');
+var app_routing_1 = require('./Component/app.routing');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
+            imports: [platform_browser_1.BrowserModule,
+                angular2_google_maps_1.AgmCoreModule.forRoot({
+                    apiKey: 'AIzaSyAAVKt72sX-0P3BEbF87bff6k9hJgdefdk'
+                }),
+                app_routing_1.routing,
+                http_1.HttpModule,
+                http_1.JsonpModule],
             declarations: [app_component_1.AppComponent],
+            providers: [
+                app_routing_1.appRoutingProviders
+            ],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
@@ -26,10 +37,4 @@ var AppModule = (function () {
     return AppModule;
 }());
 exports.AppModule = AppModule;
-/*
-,
-        AgmCoreModule.forRoot({
-            apiKey: 'AIzaSyAAVKt72sX-0P3BEbF87bff6k9hJgdefdk'
-        })
-   */ 
 //# sourceMappingURL=app.module.js.map

@@ -1,0 +1,21 @@
+﻿<div class="container height-100">
+
+    <sebm-google-map [latitude]="lat" [longitude]="lng">
+        <sebm-google-map-marker *ngFor="let m of devices; let i = index"
+                                [latitude]="m.latitude"
+                                [longitude]="m.longitude">
+            <sebm-google-map-info-window>
+                <strong>InfoWindow content</strong>
+            </sebm-google-map-info-window>
+        </sebm-google-map-marker>
+
+        <sebm-google-map-marker *ngIf="me" [latitude]="me.latitude"
+                                [longitude]="me.longitude"
+                                [iconUrl]="me.icon">
+            <sebm-google-map-info-window>
+                <strong [innerHTML]="me.uniqueDeviceID"></strong>
+            </sebm-google-map-info-window>
+        </sebm-google-map-marker>
+
+    </sebm-google-map>
+</div>

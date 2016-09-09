@@ -7,10 +7,11 @@
     // map tells the System loader where to look for things
     var map = {
         'app': 'app', // 'dist',
-        'angular2-google-maps': 'https://npmcdn.com/angular2-google-maps@0.12.0',
+        
         '@angular': '/Scripts/node_modules/@angular',
         'angular2-in-memory-web-api': '/Scripts/node_modules/angular2-in-memory-web-api',
-        'rxjs': '/Scripts/node_modules/rxjs'
+        'rxjs': '/Scripts/node_modules/rxjs',
+        'angular2-google-maps': '/Scripts/node_modules/angular2-google-maps/core',
     };
 
     // packages tells the System loader how to load when no filename and/or no extension
@@ -18,6 +19,7 @@
         'app': { main: 'main.js', defaultExtension: 'js' },
         'rxjs': { defaultExtension: 'js' },
         'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
+        'angular2-google-maps': { main: 'index.js', defaultExtension: 'js'}
     };
 
     var ngPackageNames = [

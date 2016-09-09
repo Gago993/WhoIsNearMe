@@ -1,0 +1,31 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>
+                    List Of Devices
+                </h4>
+            </div>
+            <table class="table table-fixed">
+                <thead>
+                    <tr>
+                        <th class="col-xs-2">#</th>
+                        <th class="col-xs-2">Latitude</th>
+                        <th class="col-xs-2">Longitude</th>
+                        <th class="col-xs-3">Unique Device ID</th>
+                        <th class="col-xs-3">Last Access</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let device of devices">
+                        <td class="col-xs-2">{{device.id}}</td>
+                        <td class="col-xs-2">{{device.latitude}}</td>
+                        <td class="col-xs-2">{{device.longitude}}</td>
+                        <td class="col-xs-3">{{device.uniqueDeviceID}}</td>
+                        <td class="col-xs-3">{{device.lastVisit | date: 'medium'}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
