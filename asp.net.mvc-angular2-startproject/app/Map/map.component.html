@@ -5,15 +5,58 @@
                                 [latitude]="m.latitude"
                                 [longitude]="m.longitude">
             <sebm-google-map-info-window>
-                <strong>InfoWindow content</strong>
+                <div>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Device ID: </td>
+                                <td>{{m.uniqueDeviceID}}</td>
+                            </tr>
+                            <tr>
+                                <td>Latitude: </td>
+                                <td>{{m.latitude}}</td>
+                            </tr>
+                            <tr>
+                                <td>Longitude: </td>
+                                <td>{{m.longitude}}</td>
+                            </tr>
+                            <tr>
+                                <td>Last Visit: </td>
+                                <td>{{m.lastVisit | date: 'medium'}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </sebm-google-map-info-window>
         </sebm-google-map-marker>
 
         <sebm-google-map-marker *ngIf="me" [latitude]="me.latitude"
                                 [longitude]="me.longitude"
-                                [iconUrl]="me.icon">
+                                [iconUrl]="me.icon"
+                                [zIndex]="me.zIndex">
             <sebm-google-map-info-window>
-                <strong [innerHTML]="me.uniqueDeviceID"></strong>
+                <div>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Device ID: </td>
+                                <td>{{me.uniqueDeviceID}}</td>
+                            </tr>
+                            <tr>
+                                <td>Latitude: </td>
+                                <td>{{me.latitude}}</td>
+                            </tr>
+                            <tr>
+                                <td>Longitude: </td>
+                                <td>{{me.longitude}}</td>
+                            </tr>
+                            <tr>
+                                <td>Last Visit: </td>
+                                <td>{{me.lastVisit | date: 'medium'}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </sebm-google-map-info-window>
         </sebm-google-map-marker>
 

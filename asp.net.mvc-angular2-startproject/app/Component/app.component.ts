@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CONFIG, IPService } from '../shared/shared';
+import { CONFIG, IPService, LocationService } from '../shared/shared';
 import { DevicesService } from '../Devices/devices.service';
 
 

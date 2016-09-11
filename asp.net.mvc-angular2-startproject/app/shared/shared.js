@@ -4,4 +4,5 @@ function __export(m) {
 }
 __export(require('./config'));
 __export(require('./ip.service'));
+__export(require('./location.service'));
 //# sourceMappingURL=shared.js.map

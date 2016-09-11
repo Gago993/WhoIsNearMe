@@ -380,6 +380,7 @@
     <TypeScriptCompile Include="app\Map\map.ts" />
     <TypeScriptCompile Include="app\shared\config.ts" />
     <TypeScriptCompile Include="app\shared\ip.service.ts" />
+    <TypeScriptCompile Include="app\shared\location.service.ts" />
     <TypeScriptCompile Include="app\shared\shared.ts" />
   </ItemGroup>
   <ItemGroup>
